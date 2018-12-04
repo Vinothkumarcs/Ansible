@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+    - name: ensure nginx is at the latest version
+      apt: name=nginx state=latest
+      sudo: yes
+    - name: start nginx
+      service:
+          name: nginx
+          state: started
+    - name: Ensure python-apt is installed
+      command: >
+        apt-get install python-apt -y -q
+        creates=/usr/share/doc/python-apt
