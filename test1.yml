@@ -1,8 +1,5 @@
 ---
 - hosts: client1
-  become: true
-  become_method: su
-  become_user: Welcome
   tasks:
        - name: create folder
          command: mkdir /lvdata/cloudiq data
