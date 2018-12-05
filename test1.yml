@@ -1,6 +1,6 @@
 ---
 - hosts: client1
-  user: root
+  user: Welcome
   become: true
   tasks:
        - name: create folder
