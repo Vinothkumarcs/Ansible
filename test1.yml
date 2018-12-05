@@ -1,0 +1,7 @@
+---
+- hosts: client1
+  user: root
+  become: true
+  tasks:
+       - name: lvresize
+         command: mkdir /lvdata/cloudiq data
