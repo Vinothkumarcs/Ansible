@@ -3,5 +3,5 @@
   user: root
   become: true
   tasks:
-       - name: lvresize
+       - name: create folder
          command: mkdir /lvdata/cloudiq data
