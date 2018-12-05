@@ -1,5 +1,7 @@
 ---
 - hosts: client1
+  user: root
+  become: true
   tasks:
        - name: Find the Disk Space Information
          shell: df -h
