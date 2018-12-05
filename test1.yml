@@ -1,5 +1,5 @@
 ---
 - hosts: client1
   tasks:
-       - name: create folder
-         command: mkdir /lvdata/cloudiq data
+    - name: create folder
+      command: mkdir /lvdata/cloudiq data
